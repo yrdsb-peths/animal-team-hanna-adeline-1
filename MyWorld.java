@@ -18,6 +18,16 @@ public class MyWorld extends World {
         createApple();
     }
     
+    
+    /**
+     * End the game and draw 'GameOver'
+     */
+    public void gameOver()
+    {
+        Label gameOverLabel = new Label("Game Over", 100);
+        addObject(gameOverLabel, 300, 200);
+    }
+    
     /**
      * Create an apple at random locatin at the top of the screen
      */
