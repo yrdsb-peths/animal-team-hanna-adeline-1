@@ -41,7 +41,7 @@ public class MyWorld extends World {
         
         if(score % 5 == 0)
         {
-            level ++;
+            level += 1;
         }
     }
     
