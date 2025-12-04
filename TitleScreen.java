@@ -3,7 +3,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Title Screen
  * 
- * @author Hanna, Adeline 
+ * @author Hanna & Adeline 
  * @version December 2025
  */
 public class TitleScreen extends World

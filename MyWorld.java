@@ -4,7 +4,7 @@ import greenfoot.*;
  * The World our hero lives.
  * 
  * @author Hanna & Adeline
- * @version November 2025
+ * @version December 2025
  */
 public class MyWorld extends World {
     public int score = 0;
