@@ -3,7 +3,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Food for out elephant.
  * 
- * @author Adeline
+ * @author Hanna & Adeline
  * @version December 2025
  */
 public class Apple extends Actor

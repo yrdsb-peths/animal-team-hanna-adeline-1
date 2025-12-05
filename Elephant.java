@@ -1,9 +1,9 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * The Elephant, our Hero.
+ * Write a description of class Elephant here.
  * 
- * @author Hanna 
+ * @Adeline & Hanna
  * @version December 2025
  */
 public class Elephant extends Actor
@@ -18,19 +18,24 @@ public class Elephant extends Actor
     String facing = "right";
     SimpleTimer animationTimer = new SimpleTimer();
     
+    /*
+     * This is the constructor for the Elephant class.
+     * Pre condition: A new Elephant object is created.
+     * Post condition: A new elephant appears. 
+     */
     public Elephant()
     {
         for(int i = 0; i<idleRight.length; i++)
         {
             idleRight[i] = new GreenfootImage("images/elephant_idle/idle" + i + ".png");
-            idleRight[i].scale(100, 85);
+            idleRight[i].scale(100, 100);
         }
         
         for(int i = 0; i<idleLeft.length; i++)
         {
             idleLeft[i] = new GreenfootImage("images/elephant_idle/idle" + i + ".png");
             idleLeft[i].mirrorHorizontally();
-            idleLeft[i].scale(100, 85);
+            idleLeft[i].scale(100, 100);
         }
         
         animationTimer.mark();
@@ -40,7 +45,10 @@ public class Elephant extends Actor
     }
     
     /*
-     * Animate the elephant
+     * This methods animates the elephant's trunk.
+     * Pre condition: Space key was pressed to start game 
+     * and sprites for the animation exist.
+     * Post condition: Elephant's trunk moves every 150 ms.
      */
     int imageIndex = 0;
     public void animateElephant()
@@ -62,7 +70,11 @@ public class Elephant extends Actor
             imageIndex = (imageIndex + 1) % idleLeft.length;
         }
     }
-    
+    /*
+     * This method changes the elephant's direction and gets it to move 4 steps.
+     * Pre condition: User presses an arrow key.
+     * Post condition: Elephant moves 4 steps in direction of arrow key pressed.
+     */
     public void act()
     {
         if(Greenfoot.isKeyDown("left"))
@@ -84,7 +96,10 @@ public class Elephant extends Actor
     }
     
     /**
-     * Eat the apple and spawn new apple if an apple is eaten.
+     * This method removes the apple once the elephant touches ("eats") it
+     * and spawns a new apple.
+     * Pre condition: The elephant is touching the apple.
+     * Post condition: The apple is removed and a new apple is randomly spawned.
      */
     public void eat()
     {
