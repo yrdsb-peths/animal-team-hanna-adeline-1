@@ -32,8 +32,8 @@ public class TitleScreen extends World
 
     /**
      * This is the main world act loop that begins the game.
-     * Precondition: User presses "space" key.
-     * Postcondition: The game begins.
+     * Precondition: User presses "space" key
+     * Postcondition: Game begins
      */
     public void act()
     {
@@ -46,10 +46,8 @@ public class TitleScreen extends World
     }
     
     /**
-     * This prepares the world for the start of the program.
+     * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
-     * Precondition: Called by TitleScreen constructor (requiring TitleScreen object to be called).
-     * Postcondition: Showcases beginning screen with user instructions and the elephant.
      */
     private void prepare()
     {
