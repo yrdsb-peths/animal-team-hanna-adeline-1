@@ -32,8 +32,8 @@ public class TitleScreen extends World
 
     /**
      * This is the main world act loop that begins the game.
-     * Precondition: User presses "space" key
-     * Postcondition: Game begins
+     * Precondition: User presses "space" key.
+     * Postcondition: Game begins.
      */
     public void act()
     {
