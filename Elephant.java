@@ -11,17 +11,16 @@ public class Elephant extends Actor
     GreenfootSound elephantSound = new GreenfootSound("Elephant Sound.mp3");
     GreenfootImage[] idleLeft = new GreenfootImage[8];
     GreenfootImage [] idleRight = new GreenfootImage[8];
-    /**
-     * Constructor - The code that gets run one time when object is created
-     */
+    
     // Direction the elephant is facing
     String facing = "right";
     SimpleTimer animationTimer = new SimpleTimer();
-    
-    /*
-     * This is the constructor for the Elephant class.
-     * Pre condition: A new Elephant object is created.
-     * Post condition: A new elephant appears. 
+  
+    /**
+     * This is the constructor for the Elephant class, the code that run one
+     * when object is created.
+     * Precondition: A new Elephant object is created.
+     * Postcondition: A new elephant appears. 
      */
     public Elephant()
     {
@@ -44,11 +43,11 @@ public class Elephant extends Actor
         setImage(idleRight[0]);
     }
     
-    /*
+    /**
      * This methods animates the elephant's trunk.
-     * Pre condition: Space key was pressed to start game 
+     * Precondition: Space key was pressed to start game 
      * and sprites for the animation exist.
-     * Post condition: Elephant's trunk moves every 150 ms.
+     * Postcondition: Elephant's trunk moves every 150 ms.
      */
     int imageIndex = 0;
     public void animateElephant()
@@ -70,10 +69,11 @@ public class Elephant extends Actor
             imageIndex = (imageIndex + 1) % idleLeft.length;
         }
     }
-    /*
+    
+    /**
      * This method changes the elephant's direction and gets it to move 4 steps.
-     * Pre condition: User presses an arrow key.
-     * Post condition: Elephant moves 4 steps in direction of arrow key pressed.
+     * Precondition: User presses an arrow key.
+     * Postcondition: Elephant moves 4 steps in direction of arrow key pressed.
      */
     public void act()
     {
@@ -98,8 +98,8 @@ public class Elephant extends Actor
     /**
      * This method removes the apple once the elephant touches ("eats") it
      * and spawns a new apple.
-     * Pre condition: The elephant is touching the apple.
-     * Post condition: The apple is removed and a new apple is randomly spawned.
+     * Precondition: The elephant is touching the apple.
+     * Postcondition: The apple is removed and a new apple is randomly spawned.
      */
     public void eat()
     {

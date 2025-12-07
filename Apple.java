@@ -10,10 +10,10 @@ public class Apple extends Actor
 {
     int speed = 1;
     
-    /*
+    /**
      * This is the constructor for the Apple class.
-     * Pre condition: New object in Apple class created.
-     * Post condition: New apple (object) created.
+     * Precondition: New object in Apple class created.
+     * Postcondition: New apple (object) created.
      */
     public Apple()
     {
@@ -22,11 +22,11 @@ public class Apple extends Actor
         setImage(ap);
     }
     
-    /*
+    /**
      * This method gets the apple to fall and disappear when it
      * touches the bottom.
-     * Pre condition: Apple is in the world.
-     * Post condition: Apple that touches the bottom is removed and a new apple begins to fall.
+     * Precondition: Apple is in the world.
+     * Postcondition: Apple that touches the bottom is removed and a new apple begins to fall.
      */
     public void act()
     {
@@ -44,11 +44,11 @@ public class Apple extends Actor
         }
     }
     
-    /*
+    /**
      * This method increases the apple's falling speed
      * as the number of apples eaten increases.
-     * Pre condition: Number of apples eaten is a multiple of 5.
-     * Post condition: Apple's falling speed increases by 1.
+     * Precondition: Number of apples eaten is a multiple of 5.
+     * Postcondition: Apple's falling speed increases by 1.
      */
     public void setSpeed(int spd)
     {
