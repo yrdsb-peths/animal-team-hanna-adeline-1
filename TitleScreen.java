@@ -11,7 +11,9 @@ public class TitleScreen extends World
     Label titleLabel = new Label("Hungry Elephant", 65);
     /**
      * Constructor for objects of class TitleScreen.
-     * 
+     * Precondition: Object of class TitleScreen is created.
+     * Postcondition: New object of TitleScreen with 600x400 cells that are 1x1
+     * pixels is created.
      */
     public TitleScreen()
     {    
@@ -29,7 +31,9 @@ public class TitleScreen extends World
     }
 
     /**
-     * The main world act loop
+     * This is the main world act loop that begins the game.
+     * Precondition: User presses "space" key
+     * Postcondition: Game begins
      */
     public void act()
     {
