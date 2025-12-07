@@ -11,6 +11,9 @@ public class TitleScreen extends World
     Label titleLabel = new Label("Hungry Elephant", 65);
     /**
      * Constructor for objects of class TitleScreen.
+     * Precondition: Object of class TitleScreen is created.
+     * Postcondition: New object of TitleScreen is with 600x400 cells are 
+     * that are 1x1 pixels is created.
      */
     public TitleScreen()
     {    
@@ -45,6 +48,10 @@ public class TitleScreen extends World
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
+     * Precondition: Called by TitleScreen constructor (requiring TitleScreen 
+     * object to be called).
+     * PostCondition: Showcases beginning screen with user instructions and 
+     * the elephant.
      */
     private void prepare()
     {
